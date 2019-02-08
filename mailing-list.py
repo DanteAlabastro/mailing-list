@@ -56,8 +56,7 @@ for x in address_book:
     email = f'''Dear%20{recipient}%2C%0A%0AThank%20you%20for%20joining%20my%20mailing%20list!%0A%0AHere%20are%20all%20the%20things%20you%20can%20look%20forward%20to%20enjoying%20this%20year.%0A%0A%20%20%E2%80%A2%20My%20new%20book.%0A%0A%20%20%E2%80%A2%20New%20music.%0A%0A%20%20%E2%80%A2%20A%20podcast%20featuring%20yours%20truly.%0A%0AThank%20you%20for%20joining%20my%20cult-like%20following.%0A%0AYours%20truly%2C%0A%0A{sender}'''
 
     # Builds the link you will be clicking on. Fills in the email address and the recipients name.
-    link = f"""<a href="mailto:{address}?Subject=Thank%20You%20for%20Subscribing!
-           &body={email}" target="_blank">{recipient}</a>"""
+    link = f"""<a href="mailto:{address}?Subject=Thank%20You%20for%20Subscribing!&body={email}" target="_blank">{recipient}</a>"""
 
     # Creates the link as a HTML list item, <li>.
     insert = f'''<li>{link}</li>'''
